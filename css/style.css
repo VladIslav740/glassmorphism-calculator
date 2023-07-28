@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body{
+	align-items: center;
+	background: url(../img/glassmorphismCalculator1.png);
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+.container {
+	backdrop-filter: blur(15px);
+	background: rgb(255, 255, 255, 0.1);
+	border: 1.2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 11px;
+	box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+.container .calculator {
+	display: grid;
+	position: relative;
+}
+.container .calculator .value {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	color: #fff;
+	font-size: 30px;
+	grid-column: span 4;
+	height: 140px;
+	outline: none;
+	padding:  10px;
+	text-align: right;
+	width: 300px;
+}
+.container .calculator span {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	color: #fff;
+	cursor: pointer;
+	display: grid;
+	font-size: 20px;
+	font-weight: 400;
+	height: 75px;
+	place-items: center;
+	transition: .5s;
+	user-select: none;
+	width: 75px;
+}
+.container .calculator span:hover {
+	background: rgba(255, 255, 255, 0.1);
+	transition: 0s;
+}
+.container .calculator span:active {
+	background: #B6B4DC;
+	font-size: 22px;
+	font-weight: 500;
+}
+.container .calculator .clear {
+	background: rgba(255, 255, 255, 0.06);
+	grid-column: span 2;
+	width: 150px;
+}
+.container .calculator .plus {
+	grid-row: span 2;
+	height: 150px;
+}
+.container .calculator .equal {
+	background: rgba(255, 255, 255, 0.06);
+}
